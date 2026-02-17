@@ -1,0 +1,54 @@
+/* Reset CSS baseado no Andy Bell */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* 3. Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* 4. Remove list styles on ul, ol elements with a class */
+ul[class], ol[class] {
+  list-style: none;
+}
+
+/* 5. Set anchor defaults */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 6. Make images easier to work with */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* 7. Inherit fonts for inputs and buttons */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Remove animations and transitions for people who prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
