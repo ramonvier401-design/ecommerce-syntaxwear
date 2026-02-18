@@ -34,6 +34,12 @@ img, picture {
   max-width: 100%;
   display: block;
 }
+a {
+  text-decoration: none;
+}
+ul,ol {
+  list-style: none;
+}
 
 /* 7. Inherit fonts for inputs and buttons */
 input, button, textarea, select {
